@@ -1,0 +1,15 @@
+---
+kind: HorizontalPodAutoscaler
+apiVersion: autoscaling/v1
+metadata:
+  name: nginx-hpa
+  namespace: nginx-cap1
+spec:
+  targetCPUUtilizationPercentage: 50
+  minReplicas: 1
+  maxReplicas: 20
+  scaleTargetRef:
+    name: nginx-dply
+    kind: Deployment
+    apiVersion: apps/v1
+
