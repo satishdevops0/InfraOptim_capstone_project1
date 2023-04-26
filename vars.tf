@@ -10,12 +10,12 @@ variable stack {
 }
 
 variable ssh_key {
-  default     = "/home/rcusimano/work/AWSdeploy.pub"
+  default     = "/home/ubuntu/work/capston_project1_key04.pub"
   description = "Default pub key"
 }
 
 variable ssh_priv_key {
-  default     = "/home/rcusimano/work/AWSdeploy"
+  default     = "/home/ubuntu/work/capston_project1_key04.private.ppk"
   description = "Default private key"
 }
 
