@@ -18,7 +18,7 @@ metadata:
 subjects:
   - apiGroup: ""
     kind: User
-    name: podadmin
+    name: infraadmin
 roleRef:
     apiGroup: ""
     kind: Role
