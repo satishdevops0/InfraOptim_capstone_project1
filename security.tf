@@ -42,7 +42,12 @@ resource aws_security_group "web" {
     to_port     = 6443
     cidr_blocks = ["0.0.0.0/0"]
   }
-
+    ingress {
+    protocol    = "tcp"
+    from_port   = 30415
+    to_port     = 30415
+    cidr_blocks = ["0.0.0.0/0"]
+  }
   ingress {
     protocol    = -1
     from_port   = 0
